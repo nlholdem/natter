@@ -1,0 +1,929 @@
+2017-03-08 22:57:25,898 INFO  crawl.InjectorJob - InjectorJob: starting at 2017-03-08 22:57:25
+2017-03-08 22:57:25,898 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: urls
+2017-03-08 22:57:26,130 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 22:57:26,304 ERROR crawl.InjectorJob - InjectorJob: java.lang.ClassNotFoundException: org.apache.gora.mongodb.store.MongoStore
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.nutch.storage.StorageUtils.getDataStoreClass(StorageUtils.java:93)
+	at org.apache.nutch.storage.StorageUtils.createWebStore(StorageUtils.java:77)
+	at org.apache.nutch.crawl.InjectorJob.run(InjectorJob.java:218)
+	at org.apache.nutch.crawl.InjectorJob.inject(InjectorJob.java:252)
+	at org.apache.nutch.crawl.InjectorJob.run(InjectorJob.java:275)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.InjectorJob.main(InjectorJob.java:284)
+
+2017-03-08 23:03:09,633 INFO  crawl.InjectorJob - InjectorJob: starting at 2017-03-08 23:03:09
+2017-03-08 23:03:09,634 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: urls
+2017-03-08 23:03:09,747 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:03:10,301 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.mongodb.store.MongoStore as the Gora storage class.
+2017-03-08 23:03:10,737 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul2018286096/.staging/job_local2018286096_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:03:10,739 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul2018286096/.staging/job_local2018286096_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:03:10,808 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local2018286096_0001/job_local2018286096_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:03:10,809 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local2018286096_0001/job_local2018286096_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:03:11,137 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2017-03-08 23:03:11,843 INFO  crawl.InjectorJob - InjectorJob: total number of urls rejected by filters: 0
+2017-03-08 23:03:11,843 INFO  crawl.InjectorJob - InjectorJob: total number of urls injected after normalization and filtering: 1
+2017-03-08 23:03:11,844 INFO  crawl.InjectorJob - Injector: finished at 2017-03-08 23:03:11, elapsed: 00:00:02
+2017-03-08 23:03:27,972 INFO  crawl.GeneratorJob - GeneratorJob: starting at 2017-03-08 23:03:27
+2017-03-08 23:03:27,973 INFO  crawl.GeneratorJob - GeneratorJob: Selecting best-scoring urls due for fetch.
+2017-03-08 23:03:27,973 INFO  crawl.GeneratorJob - GeneratorJob: starting
+2017-03-08 23:03:27,973 INFO  crawl.GeneratorJob - GeneratorJob: filtering: true
+2017-03-08 23:03:27,973 INFO  crawl.GeneratorJob - GeneratorJob: normalizing: true
+2017-03-08 23:03:27,973 INFO  crawl.GeneratorJob - GeneratorJob: topN: 80
+2017-03-08 23:03:28,046 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:03:28,052 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:03:28,052 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:03:28,052 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:03:28,636 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1892735720/.staging/job_local1892735720_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:03:28,638 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1892735720/.staging/job_local1892735720_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:03:28,694 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1892735720_0001/job_local1892735720_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:03:28,696 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1892735720_0001/job_local1892735720_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:03:28,869 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:03:28,869 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:03:28,869 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:03:28,898 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2017-03-08 23:03:29,750 INFO  crawl.GeneratorJob - GeneratorJob: finished at 2017-03-08 23:03:29, time elapsed: 00:00:01
+2017-03-08 23:03:29,750 INFO  crawl.GeneratorJob - GeneratorJob: generated batch id: 1489014207-924161706 containing 1 URLs
+2017-03-08 23:03:40,726 INFO  fetcher.FetcherJob - FetcherJob: starting at 2017-03-08 23:03:40
+2017-03-08 23:03:40,727 INFO  fetcher.FetcherJob - FetcherJob: fetching all
+2017-03-08 23:03:40,727 INFO  fetcher.FetcherJob - FetcherJob: threads: 10
+2017-03-08 23:03:40,728 INFO  fetcher.FetcherJob - FetcherJob: parsing: false
+2017-03-08 23:03:40,728 INFO  fetcher.FetcherJob - FetcherJob: resuming: false
+2017-03-08 23:03:40,728 INFO  fetcher.FetcherJob - FetcherJob : timelimit set for : -1
+2017-03-08 23:03:40,844 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:03:41,116 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:03:41,126 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:03:41,136 INFO  http.Http - http.proxy.host = null
+2017-03-08 23:03:41,137 INFO  http.Http - http.proxy.port = 8080
+2017-03-08 23:03:41,137 INFO  http.Http - http.timeout = 10000
+2017-03-08 23:03:41,137 INFO  http.Http - http.content.limit = 65536
+2017-03-08 23:03:41,137 INFO  http.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:03:41,137 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:03:41,137 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:03:41,137 INFO  http.Http - http.proxy.host = null
+2017-03-08 23:03:41,137 INFO  http.Http - http.proxy.port = 8080
+2017-03-08 23:03:41,137 INFO  http.Http - http.timeout = 10000
+2017-03-08 23:03:41,137 INFO  http.Http - http.content.limit = 65536
+2017-03-08 23:03:41,137 INFO  http.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:03:41,137 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:03:41,137 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:03:41,582 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul2010391569/.staging/job_local2010391569_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:03:41,584 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul2010391569/.staging/job_local2010391569_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:03:41,626 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local2010391569_0001/job_local2010391569_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:03:41,628 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local2010391569_0001/job_local2010391569_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:03:41,766 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2017-03-08 23:03:41,864 INFO  fetcher.FetcherJob - Using queue mode : byHost
+2017-03-08 23:03:41,864 INFO  fetcher.FetcherJob - Fetcher: threads: 10
+2017-03-08 23:03:41,871 INFO  fetcher.FetcherJob - QueueFeeder finished: total 1 records. Hit by time limit :0
+2017-03-08 23:03:41,879 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/ (queue crawl delay=5000ms)
+2017-03-08 23:03:41,879 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:03:41,879 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:03:41,879 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:03:41,880 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:03:41,880 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:03:41,880 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:03:41,880 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:03:41,883 INFO  fetcher.FetcherJob - -finishing thread FetcherThread1, activeThreads=1
+2017-03-08 23:03:41,892 INFO  fetcher.FetcherJob - -finishing thread FetcherThread2, activeThreads=1
+2017-03-08 23:03:41,896 INFO  fetcher.FetcherJob - -finishing thread FetcherThread3, activeThreads=1
+2017-03-08 23:03:41,896 INFO  fetcher.FetcherJob - -finishing thread FetcherThread4, activeThreads=1
+2017-03-08 23:03:41,897 INFO  fetcher.FetcherJob - -finishing thread FetcherThread5, activeThreads=1
+2017-03-08 23:03:41,897 INFO  fetcher.FetcherJob - -finishing thread FetcherThread6, activeThreads=1
+2017-03-08 23:03:41,897 INFO  fetcher.FetcherJob - -finishing thread FetcherThread7, activeThreads=1
+2017-03-08 23:03:41,897 INFO  fetcher.FetcherJob - -finishing thread FetcherThread8, activeThreads=1
+2017-03-08 23:03:41,897 INFO  fetcher.FetcherJob - Fetcher: throughput threshold: -1
+2017-03-08 23:03:41,897 INFO  fetcher.FetcherJob - Fetcher: throughput threshold sequence: 5
+2017-03-08 23:03:41,899 INFO  fetcher.FetcherJob - -finishing thread FetcherThread9, activeThreads=1
+2017-03-08 23:03:42,213 INFO  fetcher.FetcherJob - -finishing thread FetcherThread0, activeThreads=0
+2017-03-08 23:03:46,898 INFO  fetcher.FetcherJob - 0/0 spinwaiting/active, 1 pages, 0 errors, 0.2 0 pages/s, 102 102 kb/s, 0 URLs in 0 queues
+2017-03-08 23:03:46,898 INFO  fetcher.FetcherJob - -activeThreads=0
+2017-03-08 23:03:46,922 INFO  fetcher.FetcherJob - Using queue mode : byHost
+2017-03-08 23:03:46,922 INFO  fetcher.FetcherJob - Fetcher: threads: 10
+2017-03-08 23:03:46,927 INFO  fetcher.FetcherJob - QueueFeeder finished: total 0 records. Hit by time limit :0
+2017-03-08 23:03:46,929 INFO  fetcher.FetcherJob - Fetcher: throughput threshold: -1
+2017-03-08 23:03:46,930 INFO  fetcher.FetcherJob - Fetcher: throughput threshold sequence: 5
+2017-03-08 23:03:46,931 INFO  fetcher.FetcherJob - -finishing thread FetcherThread9, activeThreads=9
+2017-03-08 23:03:47,427 INFO  fetcher.FetcherJob - -finishing thread FetcherThread0, activeThreads=8
+2017-03-08 23:03:47,429 INFO  fetcher.FetcherJob - -finishing thread FetcherThread8, activeThreads=7
+2017-03-08 23:03:47,429 INFO  fetcher.FetcherJob - -finishing thread FetcherThread2, activeThreads=6
+2017-03-08 23:03:47,429 INFO  fetcher.FetcherJob - -finishing thread FetcherThread4, activeThreads=3
+2017-03-08 23:03:47,430 INFO  fetcher.FetcherJob - -finishing thread FetcherThread5, activeThreads=2
+2017-03-08 23:03:47,429 INFO  fetcher.FetcherJob - -finishing thread FetcherThread3, activeThreads=4
+2017-03-08 23:03:47,429 INFO  fetcher.FetcherJob - -finishing thread FetcherThread1, activeThreads=5
+2017-03-08 23:03:47,430 INFO  fetcher.FetcherJob - -finishing thread FetcherThread6, activeThreads=0
+2017-03-08 23:03:47,430 INFO  fetcher.FetcherJob - -finishing thread FetcherThread7, activeThreads=1
+2017-03-08 23:03:51,931 INFO  fetcher.FetcherJob - 0/0 spinwaiting/active, 0 pages, 0 errors, 0.0 0 pages/s, 0 0 kb/s, 0 URLs in 0 queues
+2017-03-08 23:03:51,931 INFO  fetcher.FetcherJob - -activeThreads=0
+2017-03-08 23:03:52,663 INFO  fetcher.FetcherJob - FetcherJob: finished at 2017-03-08 23:03:52, time elapsed: 00:00:11
+2017-03-08 23:04:02,991 INFO  parse.ParserJob - ParserJob: starting at 2017-03-08 23:04:02
+2017-03-08 23:04:02,992 INFO  parse.ParserJob - ParserJob: resuming:	false
+2017-03-08 23:04:02,992 INFO  parse.ParserJob - ParserJob: forced reparse:	false
+2017-03-08 23:04:02,992 INFO  parse.ParserJob - ParserJob: parsing all
+2017-03-08 23:04:03,118 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:04:04,087 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2017-03-08 23:04:04,624 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul567041750/.staging/job_local567041750_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:04:04,625 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul567041750/.staging/job_local567041750_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:04:04,670 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local567041750_0001/job_local567041750_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:04:04,672 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local567041750_0001/job_local567041750_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:04:04,749 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2017-03-08 23:04:04,793 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/
+2017-03-08 23:04:04,976 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2017-03-08 23:04:05,707 INFO  parse.ParserJob - ParserJob: success
+2017-03-08 23:04:05,708 INFO  parse.ParserJob - ParserJob: finished at 2017-03-08 23:04:05, time elapsed: 00:00:02
+2017-03-08 23:04:14,894 INFO  crawl.DbUpdaterJob - DbUpdaterJob: starting at 2017-03-08 23:04:14
+2017-03-08 23:04:14,894 INFO  crawl.DbUpdaterJob - DbUpdaterJob: updatinging all
+2017-03-08 23:04:15,052 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:04:15,599 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul228063041/.staging/job_local228063041_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:04:15,600 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul228063041/.staging/job_local228063041_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:04:15,644 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local228063041_0001/job_local228063041_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:04:15,648 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local228063041_0001/job_local228063041_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:04:15,867 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:04:15,868 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:04:15,868 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:04:16,678 INFO  crawl.DbUpdaterJob - DbUpdaterJob: finished at 2017-03-08 23:04:16, time elapsed: 00:00:01
+2017-03-08 23:04:48,442 INFO  indexer.IndexingJob - IndexingJob: starting
+2017-03-08 23:04:48,558 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:04:48,641 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:04:48,641 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:04:48,652 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:04:48,652 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:04:48,660 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:04:48,810 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:04:49,265 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul404845/.staging/job_local404845_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:04:49,267 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul404845/.staging/job_local404845_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:04:49,314 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local404845_0001/job_local404845_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:04:49,316 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local404845_0001/job_local404845_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:04:49,500 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:04:52,063 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:04:52,063 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:04:52,063 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:04:52,063 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:04:52,063 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:04:52,063 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:04:52,117 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 1, length = 1354, total docs = 1]
+2017-03-08 23:04:52,121 INFO  elastic.ElasticIndexWriter - Processing to finalize last execute
+2017-03-08 23:06:22,559 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 1, length = 1354, total docs = 1]
+2017-03-08 23:06:22,560 WARN  mapred.LocalJobRunner - job_local404845_0001
+java.lang.Exception: java.lang.RuntimeException: First failure in bulk: UnavailableShardsException[[nutchindex][4] primary shard is not active Timeout: [1m], request: [BulkShardRequest to [nutchindex] containing [1] requests]]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.RuntimeException: First failure in bulk: UnavailableShardsException[[nutchindex][4] primary shard is not active Timeout: [1m], request: [BulkShardRequest to [nutchindex] containing [1] requests]]
+	at org.apache.nutch.indexwriter.elastic.ElasticIndexWriter.commit(ElasticIndexWriter.java:166)
+	at org.apache.nutch.indexwriter.elastic.ElasticIndexWriter.close(ElasticIndexWriter.java:200)
+	at org.apache.nutch.indexer.IndexWriters.close(IndexWriters.java:114)
+	at org.apache.nutch.indexer.IndexerOutputFormat$1.close(IndexerOutputFormat.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewDirectOutputCollector.close(MapTask.java:647)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:770)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-08 23:06:23,374 ERROR indexer.IndexingJob - SolrIndexerJob: java.lang.RuntimeException: job failed: name=apache-nutch-2.3.1.jar, jobid=job_local404845_0001
+	at org.apache.nutch.util.NutchJob.waitForCompletion(NutchJob.java:120)
+	at org.apache.nutch.indexer.IndexingJob.run(IndexingJob.java:154)
+	at org.apache.nutch.indexer.IndexingJob.index(IndexingJob.java:176)
+	at org.apache.nutch.indexer.IndexingJob.run(IndexingJob.java:202)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.indexer.IndexingJob.main(IndexingJob.java:211)
+
+2017-03-08 23:07:14,830 INFO  indexer.IndexingJob - IndexingJob: starting
+2017-03-08 23:07:14,946 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:07:15,007 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:07:15,007 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:07:15,008 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:07:15,008 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:07:15,011 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:07:15,164 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:07:15,645 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul202414911/.staging/job_local202414911_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:07:15,647 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul202414911/.staging/job_local202414911_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:07:15,692 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local202414911_0001/job_local202414911_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:07:15,694 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local202414911_0001/job_local202414911_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:07:15,764 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:07:17,158 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:07:17,158 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:07:17,158 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:07:17,158 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:07:17,158 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:07:17,159 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:07:17,207 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 1, length = 1354, total docs = 1]
+2017-03-08 23:07:17,211 INFO  elastic.ElasticIndexWriter - Processing to finalize last execute
+2017-03-08 23:08:17,295 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 1, length = 1354, total docs = 1]
+2017-03-08 23:08:17,296 WARN  mapred.LocalJobRunner - job_local202414911_0001
+java.lang.Exception: java.lang.RuntimeException: First failure in bulk: UnavailableShardsException[[nutchindex][4] primary shard is not active Timeout: [1m], request: [BulkShardRequest to [nutchindex] containing [1] requests]]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.lang.RuntimeException: First failure in bulk: UnavailableShardsException[[nutchindex][4] primary shard is not active Timeout: [1m], request: [BulkShardRequest to [nutchindex] containing [1] requests]]
+	at org.apache.nutch.indexwriter.elastic.ElasticIndexWriter.commit(ElasticIndexWriter.java:166)
+	at org.apache.nutch.indexwriter.elastic.ElasticIndexWriter.close(ElasticIndexWriter.java:200)
+	at org.apache.nutch.indexer.IndexWriters.close(IndexWriters.java:114)
+	at org.apache.nutch.indexer.IndexerOutputFormat$1.close(IndexerOutputFormat.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewDirectOutputCollector.close(MapTask.java:647)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:770)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-08 23:08:17,740 ERROR indexer.IndexingJob - SolrIndexerJob: java.lang.RuntimeException: job failed: name=apache-nutch-2.3.1.jar, jobid=job_local202414911_0001
+	at org.apache.nutch.util.NutchJob.waitForCompletion(NutchJob.java:120)
+	at org.apache.nutch.indexer.IndexingJob.run(IndexingJob.java:154)
+	at org.apache.nutch.indexer.IndexingJob.index(IndexingJob.java:176)
+	at org.apache.nutch.indexer.IndexingJob.run(IndexingJob.java:202)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.indexer.IndexingJob.main(IndexingJob.java:211)
+
+2017-03-08 23:08:45,145 INFO  indexer.IndexingJob - IndexingJob: starting
+2017-03-08 23:08:45,266 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:08:45,327 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:08:45,327 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:08:45,328 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:08:45,328 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:08:45,331 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:08:45,486 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:08:45,938 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1956198902/.staging/job_local1956198902_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:08:45,940 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1956198902/.staging/job_local1956198902_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:08:45,982 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1956198902_0001/job_local1956198902_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:08:45,984 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1956198902_0001/job_local1956198902_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:08:46,059 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:08:47,453 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:08:47,454 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:08:47,454 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:08:47,454 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:08:47,454 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:08:47,454 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:08:47,498 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 1, length = 1354, total docs = 1]
+2017-03-08 23:08:47,502 INFO  elastic.ElasticIndexWriter - Processing to finalize last execute
+2017-03-08 23:08:47,972 INFO  elastic.ElasticIndexWriter - Previous took in ms 462, including wait 470
+2017-03-08 23:08:50,024 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:08:50,024 INFO  indexer.IndexingJob - Active IndexWriters :
+ElasticIndexWriter
+	elastic.cluster : elastic prefix cluster
+	elastic.host : hostname
+	elastic.port : port  (default 9300)
+	elastic.index : elastic index command 
+	elastic.max.bulk.docs : elastic bulk index doc counts. (default 250) 
+	elastic.max.bulk.size : elastic bulk index length. (default 2500500 ~2.5MB)
+
+
+2017-03-08 23:08:50,073 INFO  indexer.IndexingJob - IndexingJob: done.
+2017-03-08 23:10:46,101 INFO  crawl.InjectorJob - InjectorJob: starting at 2017-03-08 23:10:46
+2017-03-08 23:10:46,101 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: urls
+2017-03-08 23:10:46,231 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:10:46,608 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.mongodb.store.MongoStore as the Gora storage class.
+2017-03-08 23:10:46,799 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1294840194/.staging/job_local1294840194_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:10:46,801 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1294840194/.staging/job_local1294840194_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:10:46,864 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1294840194_0001/job_local1294840194_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:10:46,866 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1294840194_0001/job_local1294840194_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:10:46,979 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2017-03-08 23:10:47,893 INFO  crawl.InjectorJob - InjectorJob: total number of urls rejected by filters: 1
+2017-03-08 23:10:47,893 INFO  crawl.InjectorJob - InjectorJob: total number of urls injected after normalization and filtering: 0
+2017-03-08 23:10:47,894 INFO  crawl.InjectorJob - Injector: finished at 2017-03-08 23:10:47, elapsed: 00:00:01
+2017-03-08 23:11:18,102 INFO  crawl.InjectorJob - InjectorJob: starting at 2017-03-08 23:11:18
+2017-03-08 23:11:18,102 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: urls
+2017-03-08 23:11:18,221 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:11:18,591 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.mongodb.store.MongoStore as the Gora storage class.
+2017-03-08 23:11:18,746 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul2083434302/.staging/job_local2083434302_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:11:18,748 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul2083434302/.staging/job_local2083434302_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:11:18,794 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local2083434302_0001/job_local2083434302_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:11:18,796 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local2083434302_0001/job_local2083434302_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:11:18,896 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2017-03-08 23:11:19,823 INFO  crawl.InjectorJob - InjectorJob: total number of urls rejected by filters: 0
+2017-03-08 23:11:19,823 INFO  crawl.InjectorJob - InjectorJob: total number of urls injected after normalization and filtering: 1
+2017-03-08 23:11:19,824 INFO  crawl.InjectorJob - Injector: finished at 2017-03-08 23:11:19, elapsed: 00:00:01
+2017-03-08 23:11:38,364 INFO  crawl.GeneratorJob - GeneratorJob: starting at 2017-03-08 23:11:38
+2017-03-08 23:11:38,365 INFO  crawl.GeneratorJob - GeneratorJob: Selecting best-scoring urls due for fetch.
+2017-03-08 23:11:38,365 INFO  crawl.GeneratorJob - GeneratorJob: starting
+2017-03-08 23:11:38,365 INFO  crawl.GeneratorJob - GeneratorJob: filtering: true
+2017-03-08 23:11:38,365 INFO  crawl.GeneratorJob - GeneratorJob: normalizing: true
+2017-03-08 23:11:38,365 INFO  crawl.GeneratorJob - GeneratorJob: topN: 160
+2017-03-08 23:11:38,442 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:11:38,449 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:11:38,449 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:11:38,449 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:11:38,950 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul379855023/.staging/job_local379855023_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:11:38,952 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul379855023/.staging/job_local379855023_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:11:38,998 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local379855023_0001/job_local379855023_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:11:39,000 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local379855023_0001/job_local379855023_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:11:39,117 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:11:39,117 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:11:39,117 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:11:39,141 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2017-03-08 23:11:40,054 INFO  crawl.GeneratorJob - GeneratorJob: finished at 2017-03-08 23:11:40, time elapsed: 00:00:01
+2017-03-08 23:11:40,054 INFO  crawl.GeneratorJob - GeneratorJob: generated batch id: 1489014698-1152887328 containing 30 URLs
+2017-03-08 23:11:57,198 INFO  fetcher.FetcherJob - FetcherJob: starting at 2017-03-08 23:11:57
+2017-03-08 23:11:57,198 INFO  fetcher.FetcherJob - FetcherJob: fetching all
+2017-03-08 23:11:57,199 INFO  fetcher.FetcherJob - FetcherJob: threads: 10
+2017-03-08 23:11:57,199 INFO  fetcher.FetcherJob - FetcherJob: parsing: false
+2017-03-08 23:11:57,199 INFO  fetcher.FetcherJob - FetcherJob: resuming: false
+2017-03-08 23:11:57,199 INFO  fetcher.FetcherJob - FetcherJob : timelimit set for : -1
+2017-03-08 23:11:57,316 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:11:57,535 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:11:57,538 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:11:57,542 INFO  http.Http - http.proxy.host = null
+2017-03-08 23:11:57,542 INFO  http.Http - http.proxy.port = 8080
+2017-03-08 23:11:57,542 INFO  http.Http - http.timeout = 10000
+2017-03-08 23:11:57,542 INFO  http.Http - http.content.limit = 65536
+2017-03-08 23:11:57,542 INFO  http.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:11:57,542 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:11:57,542 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:11:57,542 INFO  http.Http - http.proxy.host = null
+2017-03-08 23:11:57,542 INFO  http.Http - http.proxy.port = 8080
+2017-03-08 23:11:57,543 INFO  http.Http - http.timeout = 10000
+2017-03-08 23:11:57,543 INFO  http.Http - http.content.limit = 65536
+2017-03-08 23:11:57,543 INFO  http.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:11:57,543 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:11:57,543 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:11:58,035 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul929449255/.staging/job_local929449255_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:11:58,037 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul929449255/.staging/job_local929449255_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:11:58,097 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local929449255_0001/job_local929449255_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:11:58,098 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local929449255_0001/job_local929449255_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:11:58,255 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2017-03-08 23:11:58,344 INFO  fetcher.FetcherJob - Using queue mode : byHost
+2017-03-08 23:11:58,344 INFO  fetcher.FetcherJob - Fetcher: threads: 10
+2017-03-08 23:11:58,354 INFO  fetcher.FetcherJob - QueueFeeder finished: total 28 records. Hit by time limit :0
+2017-03-08 23:11:58,357 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/live/business-39155802 (queue crawl delay=5000ms)
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:11:58,358 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:11:58,368 INFO  fetcher.FetcherJob - Fetcher: throughput threshold: -1
+2017-03-08 23:11:58,368 INFO  fetcher.FetcherJob - Fetcher: throughput threshold sequence: 5
+2017-03-08 23:12:03,368 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 1 pages, 0 errors, 0.2 0 pages/s, 102 102 kb/s, 27 URLs in 1 queues
+2017-03-08 23:12:04,532 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport (queue crawl delay=5000ms)
+2017-03-08 23:12:08,368 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 2 pages, 0 errors, 0.2 0 pages/s, 102 102 kb/s, 26 URLs in 1 queues
+2017-03-08 23:12:09,701 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-39212665 (queue crawl delay=5000ms)
+2017-03-08 23:12:13,369 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 3 pages, 0 errors, 0.2 0 pages/s, 102 102 kb/s, 25 URLs in 1 queues
+2017-03-08 23:12:14,817 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/food (queue crawl delay=5000ms)
+2017-03-08 23:12:14,911 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2017-03-08 23:12:18,369 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 4 pages, 0 errors, 0.2 0 pages/s, 76 0 kb/s, 24 URLs in 1 queues
+2017-03-08 23:12:19,955 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/business-17442946 (queue crawl delay=5000ms)
+2017-03-08 23:12:23,369 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 5 pages, 0 errors, 0.2 0 pages/s, 82 102 kb/s, 23 URLs in 1 queues
+2017-03-08 23:12:25,049 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-politics-39203784 (queue crawl delay=5000ms)
+2017-03-08 23:12:28,370 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 6 pages, 0 errors, 0.2 0 pages/s, 85 102 kb/s, 22 URLs in 1 queues
+2017-03-08 23:12:30,144 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/radio (queue crawl delay=5000ms)
+2017-03-08 23:12:33,370 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 7 pages, 0 errors, 0.2 0 pages/s, 87 100 kb/s, 21 URLs in 1 queues
+2017-03-08 23:12:36,652 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/makeitdigital (queue crawl delay=5000ms)
+2017-03-08 23:12:38,370 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 8 pages, 0 errors, 0.2 0 pages/s, 89 102 kb/s, 20 URLs in 1 queues
+2017-03-08 23:12:41,733 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/iwonder (queue crawl delay=5000ms)
+2017-03-08 23:12:43,371 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 9 pages, 0 errors, 0.2 0 pages/s, 90 102 kb/s, 19 URLs in 1 queues
+2017-03-08 23:12:46,895 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/education (queue crawl delay=5000ms)
+2017-03-08 23:12:48,371 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 10 pages, 0 errors, 0.2 0 pages/s, 92 102 kb/s, 18 URLs in 1 queues
+2017-03-08 23:12:52,124 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/local (queue crawl delay=5000ms)
+2017-03-08 23:12:53,371 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 11 pages, 0 errors, 0.2 0 pages/s, 83 0 kb/s, 17 URLs in 1 queues
+2017-03-08 23:12:57,184 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport/football/39152666 (queue crawl delay=5000ms)
+2017-03-08 23:12:58,372 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 12 pages, 0 errors, 0.2 0 pages/s, 85 102 kb/s, 16 URLs in 1 queues
+2017-03-08 23:13:02,798 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/taster (queue crawl delay=5000ms)
+2017-03-08 23:13:03,372 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 13 pages, 0 errors, 0.2 0 pages/s, 78 0 kb/s, 15 URLs in 1 queues
+2017-03-08 23:13:08,158 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/cbeebies (queue crawl delay=5000ms)
+2017-03-08 23:13:08,373 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 14 pages, 0 errors, 0.2 0 pages/s, 80 102 kb/s, 14 URLs in 1 queues
+2017-03-08 23:13:13,327 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news (queue crawl delay=5000ms)
+2017-03-08 23:13:13,373 INFO  fetcher.FetcherJob - 9/10 spinwaiting/active, 14 pages, 0 errors, 0.2 0 pages/s, 75 0 kb/s, 13 URLs in 1 queues
+2017-03-08 23:13:18,373 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 15 pages, 0 errors, 0.2 0 pages/s, 76 102 kb/s, 13 URLs in 1 queues
+2017-03-08 23:13:18,472 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/business-39114211 (queue crawl delay=5000ms)
+2017-03-08 23:13:23,374 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 16 pages, 0 errors, 0.2 0 pages/s, 78 102 kb/s, 12 URLs in 1 queues
+2017-03-08 23:13:24,118 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/accessibility/ (queue crawl delay=5000ms)
+2017-03-08 23:13:28,374 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 17 pages, 0 errors, 0.2 0 pages/s, 77 56 kb/s, 11 URLs in 1 queues
+2017-03-08 23:13:29,209 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/music (queue crawl delay=5000ms)
+2017-03-08 23:13:33,374 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 18 pages, 0 errors, 0.2 0 pages/s, 78 102 kb/s, 10 URLs in 1 queues
+2017-03-08 23:13:34,301 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-england-suffolk-39209562 (queue crawl delay=5000ms)
+2017-03-08 23:13:38,375 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 19 pages, 0 errors, 0.2 0 pages/s, 79 102 kb/s, 9 URLs in 1 queues
+2017-03-08 23:13:39,423 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/weather (queue crawl delay=5000ms)
+2017-03-08 23:13:43,375 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 20 pages, 0 errors, 0.2 0 pages/s, 75 0 kb/s, 8 URLs in 1 queues
+2017-03-08 23:13:44,489 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/iplayer (queue crawl delay=5000ms)
+2017-03-08 23:13:48,375 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 21 pages, 0 errors, 0.2 0 pages/s, 77 102 kb/s, 7 URLs in 1 queues
+2017-03-08 23:13:49,581 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/tv (queue crawl delay=5000ms)
+2017-03-08 23:13:53,376 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 22 pages, 0 errors, 0.2 0 pages/s, 78 102 kb/s, 6 URLs in 1 queues
+2017-03-08 23:13:54,656 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport/rugby-union/39210782 (queue crawl delay=5000ms)
+2017-03-08 23:13:58,376 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 23 pages, 0 errors, 0.2 0 pages/s, 79 102 kb/s, 5 URLs in 1 queues
+2017-03-08 23:13:59,747 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/business-39193938 (queue crawl delay=5000ms)
+2017-03-08 23:14:03,376 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 24 pages, 0 errors, 0.2 0 pages/s, 80 102 kb/s, 4 URLs in 1 queues
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   nextFetchTime = 1489014844834
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   now           = 1489014843377
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/sport/football/39136972
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   1. http://www.bbc.co.uk/news/uk-england-39193347
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   2. http://www.bbc.co.uk/arts
+2017-03-08 23:14:03,377 INFO  fetcher.FetcherJob -   3. http://www.bbc.co.uk/cbbc
+2017-03-08 23:14:04,839 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport/football/39136972 (queue crawl delay=5000ms)
+2017-03-08 23:14:08,377 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 25 pages, 0 errors, 0.2 0 pages/s, 80 102 kb/s, 3 URLs in 1 queues
+2017-03-08 23:14:08,377 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:14:08,377 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   nextFetchTime = 1489014850671
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   now           = 1489014848378
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/news/uk-england-39193347
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   1. http://www.bbc.co.uk/arts
+2017-03-08 23:14:08,378 INFO  fetcher.FetcherJob -   2. http://www.bbc.co.uk/cbbc
+2017-03-08 23:14:10,702 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-england-39193347 (queue crawl delay=5000ms)
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 26 pages, 0 errors, 0.2 0 pages/s, 81 102 kb/s, 2 URLs in 1 queues
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob -   nextFetchTime = 1489014855797
+2017-03-08 23:14:13,378 INFO  fetcher.FetcherJob -   now           = 1489014853378
+2017-03-08 23:14:13,379 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/arts
+2017-03-08 23:14:13,379 INFO  fetcher.FetcherJob -   1. http://www.bbc.co.uk/cbbc
+2017-03-08 23:14:15,801 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/arts (queue crawl delay=5000ms)
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 27 pages, 0 errors, 0.2 0 pages/s, 82 102 kb/s, 1 URLs in 1 queues
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   nextFetchTime = 1489014861052
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   now           = 1489014858379
+2017-03-08 23:14:18,379 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/cbbc
+2017-03-08 23:14:21,055 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/cbbc (queue crawl delay=5000ms)
+2017-03-08 23:14:21,206 INFO  fetcher.FetcherJob - -finishing thread FetcherThread0, activeThreads=9
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread3, activeThreads=8
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread7, activeThreads=1
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread1, activeThreads=2
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread8, activeThreads=3
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread4, activeThreads=4
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread5, activeThreads=5
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread2, activeThreads=6
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread6, activeThreads=0
+2017-03-08 23:14:21,394 INFO  fetcher.FetcherJob - -finishing thread FetcherThread9, activeThreads=7
+2017-03-08 23:14:23,379 INFO  fetcher.FetcherJob - 0/0 spinwaiting/active, 28 pages, 0 errors, 0.2 0 pages/s, 83 102 kb/s, 0 URLs in 0 queues
+2017-03-08 23:14:23,380 INFO  fetcher.FetcherJob - -activeThreads=0
+2017-03-08 23:14:23,413 INFO  fetcher.FetcherJob - Using queue mode : byHost
+2017-03-08 23:14:23,413 INFO  fetcher.FetcherJob - Fetcher: threads: 10
+2017-03-08 23:14:23,416 INFO  fetcher.FetcherJob - QueueFeeder finished: total 2 records. Hit by time limit :0
+2017-03-08 23:14:23,417 INFO  fetcher.FetcherJob - fetching http://search.bbc.co.uk/search (queue crawl delay=5000ms)
+2017-03-08 23:14:23,417 INFO  fetcher.FetcherJob - fetching http://www.berndporr.me.uk/ (queue crawl delay=5000ms)
+2017-03-08 23:14:23,423 INFO  fetcher.FetcherJob - -finishing thread FetcherThread2, activeThreads=2
+2017-03-08 23:14:23,423 INFO  fetcher.FetcherJob - -finishing thread FetcherThread3, activeThreads=2
+2017-03-08 23:14:23,424 INFO  fetcher.FetcherJob - -finishing thread FetcherThread4, activeThreads=2
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:14:23,424 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:14:23,425 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:14:23,425 INFO  fetcher.FetcherJob - -finishing thread FetcherThread5, activeThreads=2
+2017-03-08 23:14:23,425 INFO  fetcher.FetcherJob - -finishing thread FetcherThread6, activeThreads=2
+2017-03-08 23:14:23,426 INFO  fetcher.FetcherJob - -finishing thread FetcherThread7, activeThreads=2
+2017-03-08 23:14:23,430 INFO  fetcher.FetcherJob - -finishing thread FetcherThread8, activeThreads=2
+2017-03-08 23:14:23,430 INFO  fetcher.FetcherJob - Fetcher: throughput threshold: -1
+2017-03-08 23:14:23,430 INFO  fetcher.FetcherJob - -finishing thread FetcherThread9, activeThreads=2
+2017-03-08 23:14:23,430 INFO  fetcher.FetcherJob - Fetcher: throughput threshold sequence: 5
+2017-03-08 23:14:23,570 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2017-03-08 23:14:23,572 INFO  fetcher.FetcherJob - -finishing thread FetcherThread0, activeThreads=1
+2017-03-08 23:14:24,322 INFO  fetcher.FetcherJob - -finishing thread FetcherThread1, activeThreads=0
+2017-03-08 23:14:28,430 INFO  fetcher.FetcherJob - 0/0 spinwaiting/active, 2 pages, 0 errors, 0.4 0 pages/s, 8 8 kb/s, 0 URLs in 0 queues
+2017-03-08 23:14:28,430 INFO  fetcher.FetcherJob - -activeThreads=0
+2017-03-08 23:14:29,192 INFO  fetcher.FetcherJob - FetcherJob: finished at 2017-03-08 23:14:29, time elapsed: 00:02:31
+2017-03-08 23:14:51,866 INFO  parse.ParserJob - ParserJob: starting at 2017-03-08 23:14:51
+2017-03-08 23:14:51,867 INFO  parse.ParserJob - ParserJob: resuming:	false
+2017-03-08 23:14:51,867 INFO  parse.ParserJob - ParserJob: forced reparse:	false
+2017-03-08 23:14:51,867 INFO  parse.ParserJob - ParserJob: parsing all
+2017-03-08 23:14:51,994 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:14:52,323 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2017-03-08 23:14:52,809 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1905106721/.staging/job_local1905106721_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:14:52,811 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1905106721/.staging/job_local1905106721_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:14:52,854 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1905106721_0001/job_local1905106721_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:14:52,856 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1905106721_0001/job_local1905106721_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:14:52,924 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2017-03-08 23:14:52,985 INFO  parse.ParserJob - Parsing http://search.bbc.co.uk/search
+2017-03-08 23:14:52,986 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/accessibility/
+2017-03-08 23:14:53,115 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2017-03-08 23:14:53,142 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/arts
+2017-03-08 23:14:53,198 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/cbbc
+2017-03-08 23:14:53,219 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/cbeebies
+2017-03-08 23:14:53,249 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/education
+2017-03-08 23:14:53,276 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/food
+2017-03-08 23:14:53,276 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/iplayer
+2017-03-08 23:14:53,303 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/iwonder
+2017-03-08 23:14:53,320 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/local
+2017-03-08 23:14:53,320 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/makeitdigital
+2017-03-08 23:14:53,343 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/music
+2017-03-08 23:14:53,355 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news
+2017-03-08 23:14:53,363 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/business-17442946
+2017-03-08 23:14:53,423 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/business-39114211
+2017-03-08 23:14:53,437 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/business-39193938
+2017-03-08 23:14:53,462 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/live/business-39155802
+2017-03-08 23:14:53,462 WARN  parse.ParserJob - http://www.bbc.co.uk/news/live/business-39155802 skipped. Content of size 399856 was truncated to 65536
+2017-03-08 23:14:53,462 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-39212665
+2017-03-08 23:14:53,476 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-england-39193347
+2017-03-08 23:14:53,487 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-england-suffolk-39209562
+2017-03-08 23:14:53,498 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-politics-39203784
+2017-03-08 23:14:53,507 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/radio
+2017-03-08 23:14:53,507 WARN  parse.ParserJob - http://www.bbc.co.uk/radio skipped. Content of size 154345 was truncated to 64577
+2017-03-08 23:14:53,507 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport
+2017-03-08 23:14:53,521 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport/football/39136972
+2017-03-08 23:14:53,522 WARN  parse.ParserJob - http://www.bbc.co.uk/sport/football/39136972 skipped. Content of size 224111 was truncated to 65536
+2017-03-08 23:14:53,522 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport/football/39152666
+2017-03-08 23:14:53,522 WARN  parse.ParserJob - http://www.bbc.co.uk/sport/football/39152666 skipped. Content of size 230157 was truncated to 65536
+2017-03-08 23:14:53,522 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport/rugby-union/39210782
+2017-03-08 23:14:53,535 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/taster
+2017-03-08 23:14:53,536 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/tv
+2017-03-08 23:14:53,552 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/weather
+2017-03-08 23:14:53,553 INFO  parse.ParserJob - Parsing http://www.berndporr.me.uk/
+2017-03-08 23:14:53,871 INFO  parse.ParserJob - ParserJob: success
+2017-03-08 23:14:53,871 INFO  parse.ParserJob - ParserJob: finished at 2017-03-08 23:14:53, time elapsed: 00:00:02
+2017-03-08 23:15:04,909 INFO  indexer.IndexingJob - IndexingJob: starting
+2017-03-08 23:15:05,034 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:15:05,096 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:15:05,096 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:15:05,097 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:15:05,097 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:15:05,100 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:15:05,252 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:15:05,703 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1984558954/.staging/job_local1984558954_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:15:05,705 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1984558954/.staging/job_local1984558954_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:15:05,748 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1984558954_0001/job_local1984558954_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:15:05,750 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1984558954_0001/job_local1984558954_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:15:05,830 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:15:07,299 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:15:07,299 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:15:07,299 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:15:07,299 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:15:07,299 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:15:07,299 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:15:07,357 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 1, length = 1354, total docs = 1]
+2017-03-08 23:15:07,361 INFO  elastic.ElasticIndexWriter - Processing to finalize last execute
+2017-03-08 23:15:07,449 INFO  elastic.ElasticIndexWriter - Previous took in ms 83, including wait 88
+2017-03-08 23:15:09,784 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:15:09,784 INFO  indexer.IndexingJob - Active IndexWriters :
+ElasticIndexWriter
+	elastic.cluster : elastic prefix cluster
+	elastic.host : hostname
+	elastic.port : port  (default 9300)
+	elastic.index : elastic index command 
+	elastic.max.bulk.docs : elastic bulk index doc counts. (default 250) 
+	elastic.max.bulk.size : elastic bulk index length. (default 2500500 ~2.5MB)
+
+
+2017-03-08 23:15:09,826 INFO  indexer.IndexingJob - IndexingJob: done.
+2017-03-08 23:18:22,292 INFO  crawl.InjectorJob - InjectorJob: starting at 2017-03-08 23:18:22
+2017-03-08 23:18:22,292 INFO  crawl.InjectorJob - InjectorJob: Injecting urlDir: urls
+2017-03-08 23:18:22,407 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:18:22,789 INFO  crawl.InjectorJob - InjectorJob: Using class org.apache.gora.mongodb.store.MongoStore as the Gora storage class.
+2017-03-08 23:18:22,966 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1539265577/.staging/job_local1539265577_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:18:22,970 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1539265577/.staging/job_local1539265577_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:18:23,021 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1539265577_0001/job_local1539265577_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:18:23,023 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1539265577_0001/job_local1539265577_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:18:23,146 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2017-03-08 23:18:24,044 INFO  crawl.InjectorJob - InjectorJob: total number of urls rejected by filters: 0
+2017-03-08 23:18:24,044 INFO  crawl.InjectorJob - InjectorJob: total number of urls injected after normalization and filtering: 1
+2017-03-08 23:18:24,045 INFO  crawl.InjectorJob - Injector: finished at 2017-03-08 23:18:24, elapsed: 00:00:01
+2017-03-08 23:18:34,284 INFO  crawl.GeneratorJob - GeneratorJob: starting at 2017-03-08 23:18:34
+2017-03-08 23:18:34,284 INFO  crawl.GeneratorJob - GeneratorJob: Selecting best-scoring urls due for fetch.
+2017-03-08 23:18:34,284 INFO  crawl.GeneratorJob - GeneratorJob: starting
+2017-03-08 23:18:34,284 INFO  crawl.GeneratorJob - GeneratorJob: filtering: true
+2017-03-08 23:18:34,284 INFO  crawl.GeneratorJob - GeneratorJob: normalizing: true
+2017-03-08 23:18:34,284 INFO  crawl.GeneratorJob - GeneratorJob: topN: 200
+2017-03-08 23:18:34,361 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:18:34,371 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:18:34,372 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:18:34,372 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:18:34,886 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul668540055/.staging/job_local668540055_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:18:34,888 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul668540055/.staging/job_local668540055_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:18:34,934 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local668540055_0001/job_local668540055_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:18:34,935 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local668540055_0001/job_local668540055_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:18:35,052 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:18:35,052 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:18:35,052 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:18:35,078 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2017-03-08 23:18:35,986 INFO  crawl.GeneratorJob - GeneratorJob: finished at 2017-03-08 23:18:35, time elapsed: 00:00:01
+2017-03-08 23:18:35,986 INFO  crawl.GeneratorJob - GeneratorJob: generated batch id: 1489015114-1082984611 containing 1 URLs
+2017-03-08 23:18:47,574 INFO  fetcher.FetcherJob - FetcherJob: starting at 2017-03-08 23:18:47
+2017-03-08 23:18:47,575 INFO  fetcher.FetcherJob - FetcherJob: fetching all
+2017-03-08 23:18:47,575 INFO  fetcher.FetcherJob - FetcherJob: threads: 10
+2017-03-08 23:18:47,575 INFO  fetcher.FetcherJob - FetcherJob: parsing: false
+2017-03-08 23:18:47,576 INFO  fetcher.FetcherJob - FetcherJob: resuming: false
+2017-03-08 23:18:47,576 INFO  fetcher.FetcherJob - FetcherJob : timelimit set for : -1
+2017-03-08 23:18:47,698 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:18:47,915 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:18:47,919 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:18:47,922 INFO  http.Http - http.proxy.host = null
+2017-03-08 23:18:47,922 INFO  http.Http - http.proxy.port = 8080
+2017-03-08 23:18:47,922 INFO  http.Http - http.timeout = 10000
+2017-03-08 23:18:47,922 INFO  http.Http - http.content.limit = 65536
+2017-03-08 23:18:47,922 INFO  http.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:18:47,922 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:18:47,922 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:18:47,923 INFO  http.Http - http.proxy.host = null
+2017-03-08 23:18:47,923 INFO  http.Http - http.proxy.port = 8080
+2017-03-08 23:18:47,923 INFO  http.Http - http.timeout = 10000
+2017-03-08 23:18:47,923 INFO  http.Http - http.content.limit = 65536
+2017-03-08 23:18:47,923 INFO  http.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:18:47,923 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:18:47,923 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:18:48,381 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1642515256/.staging/job_local1642515256_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:18:48,383 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1642515256/.staging/job_local1642515256_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:18:48,428 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1642515256_0001/job_local1642515256_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:18:48,430 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1642515256_0001/job_local1642515256_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:18:48,626 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2017-03-08 23:18:48,723 INFO  fetcher.FetcherJob - Using queue mode : byHost
+2017-03-08 23:18:48,723 INFO  fetcher.FetcherJob - Fetcher: threads: 10
+2017-03-08 23:18:48,737 INFO  fetcher.FetcherJob - QueueFeeder finished: total 28 records. Hit by time limit :0
+2017-03-08 23:18:48,739 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/food (queue crawl delay=5000ms)
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:18:48,739 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:18:48,749 INFO  fetcher.FetcherJob - Fetcher: throughput threshold: -1
+2017-03-08 23:18:48,749 INFO  fetcher.FetcherJob - Fetcher: throughput threshold sequence: 5
+2017-03-08 23:18:48,974 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2017-03-08 23:18:53,750 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 1 pages, 0 errors, 0.2 0 pages/s, 0 0 kb/s, 27 URLs in 1 queues
+2017-03-08 23:18:53,991 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-england-39193347 (queue crawl delay=5000ms)
+2017-03-08 23:18:58,750 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 2 pages, 0 errors, 0.2 0 pages/s, 51 102 kb/s, 26 URLs in 1 queues
+2017-03-08 23:18:59,100 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/music (queue crawl delay=5000ms)
+2017-03-08 23:19:03,750 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 3 pages, 0 errors, 0.2 0 pages/s, 68 102 kb/s, 25 URLs in 1 queues
+2017-03-08 23:19:04,198 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/local (queue crawl delay=5000ms)
+2017-03-08 23:19:08,751 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 4 pages, 0 errors, 0.2 0 pages/s, 51 0 kb/s, 24 URLs in 1 queues
+2017-03-08 23:19:09,260 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport/football/39136972 (queue crawl delay=5000ms)
+2017-03-08 23:19:13,751 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 5 pages, 0 errors, 0.2 0 pages/s, 61 102 kb/s, 23 URLs in 1 queues
+2017-03-08 23:19:15,236 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/cbbc (queue crawl delay=5000ms)
+2017-03-08 23:19:18,752 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 6 pages, 0 errors, 0.2 0 pages/s, 68 102 kb/s, 22 URLs in 1 queues
+2017-03-08 23:19:20,314 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/weather (queue crawl delay=5000ms)
+2017-03-08 23:19:23,752 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 7 pages, 0 errors, 0.2 0 pages/s, 58 0 kb/s, 21 URLs in 1 queues
+2017-03-08 23:19:25,429 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/education (queue crawl delay=5000ms)
+2017-03-08 23:19:28,752 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 8 pages, 0 errors, 0.2 0 pages/s, 64 102 kb/s, 20 URLs in 1 queues
+2017-03-08 23:19:30,748 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-politics-39203784 (queue crawl delay=5000ms)
+2017-03-08 23:19:33,753 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 9 pages, 0 errors, 0.2 0 pages/s, 68 102 kb/s, 19 URLs in 1 queues
+2017-03-08 23:19:35,850 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-england-suffolk-39209562 (queue crawl delay=5000ms)
+2017-03-08 23:19:38,753 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 10 pages, 0 errors, 0.2 0 pages/s, 71 102 kb/s, 18 URLs in 1 queues
+2017-03-08 23:19:40,948 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/iwonder (queue crawl delay=5000ms)
+2017-03-08 23:19:43,753 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 11 pages, 0 errors, 0.2 0 pages/s, 74 102 kb/s, 17 URLs in 1 queues
+2017-03-08 23:19:46,046 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport/rugby-union/39210782 (queue crawl delay=5000ms)
+2017-03-08 23:19:48,754 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 12 pages, 0 errors, 0.2 0 pages/s, 76 102 kb/s, 16 URLs in 1 queues
+2017-03-08 23:19:51,468 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport/football/39152666 (queue crawl delay=5000ms)
+2017-03-08 23:19:53,754 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 13 pages, 0 errors, 0.2 0 pages/s, 78 102 kb/s, 15 URLs in 1 queues
+2017-03-08 23:19:57,561 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news (queue crawl delay=5000ms)
+2017-03-08 23:19:58,754 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 14 pages, 0 errors, 0.2 0 pages/s, 80 102 kb/s, 14 URLs in 1 queues
+2017-03-08 23:20:02,686 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/makeitdigital (queue crawl delay=5000ms)
+2017-03-08 23:20:03,755 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 15 pages, 0 errors, 0.2 0 pages/s, 81 102 kb/s, 13 URLs in 1 queues
+2017-03-08 23:20:07,766 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/live/business-39155802 (queue crawl delay=5000ms)
+2017-03-08 23:20:08,755 INFO  fetcher.FetcherJob - 9/10 spinwaiting/active, 15 pages, 0 errors, 0.2 0 pages/s, 76 0 kb/s, 12 URLs in 1 queues
+2017-03-08 23:20:13,756 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 16 pages, 0 errors, 0.2 0 pages/s, 78 102 kb/s, 12 URLs in 1 queues
+2017-03-08 23:20:13,810 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/iplayer (queue crawl delay=5000ms)
+2017-03-08 23:20:18,756 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 17 pages, 0 errors, 0.2 0 pages/s, 79 102 kb/s, 11 URLs in 1 queues
+2017-03-08 23:20:18,902 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/tv (queue crawl delay=5000ms)
+2017-03-08 23:20:23,757 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 18 pages, 0 errors, 0.2 0 pages/s, 80 102 kb/s, 10 URLs in 1 queues
+2017-03-08 23:20:23,965 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/taster (queue crawl delay=5000ms)
+2017-03-08 23:20:24,125 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2017-03-08 23:20:28,757 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 19 pages, 0 errors, 0.2 0 pages/s, 76 0 kb/s, 9 URLs in 1 queues
+2017-03-08 23:20:29,128 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/business-39193938 (queue crawl delay=5000ms)
+2017-03-08 23:20:33,757 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 20 pages, 0 errors, 0.2 0 pages/s, 78 102 kb/s, 8 URLs in 1 queues
+2017-03-08 23:20:34,222 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/cbeebies (queue crawl delay=5000ms)
+2017-03-08 23:20:38,758 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 21 pages, 0 errors, 0.2 0 pages/s, 79 102 kb/s, 7 URLs in 1 queues
+2017-03-08 23:20:39,302 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/radio (queue crawl delay=5000ms)
+2017-03-08 23:20:43,758 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 22 pages, 0 errors, 0.2 0 pages/s, 80 101 kb/s, 6 URLs in 1 queues
+2017-03-08 23:20:45,491 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/sport (queue crawl delay=5000ms)
+2017-03-08 23:20:48,759 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 23 pages, 0 errors, 0.2 0 pages/s, 81 102 kb/s, 5 URLs in 1 queues
+2017-03-08 23:20:50,629 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/business-39114211 (queue crawl delay=5000ms)
+2017-03-08 23:20:53,759 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 24 pages, 0 errors, 0.2 0 pages/s, 81 102 kb/s, 4 URLs in 1 queues
+2017-03-08 23:20:53,759 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:20:53,759 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:20:53,759 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:20:53,759 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   nextFetchTime = 1489015255719
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   now           = 1489015253760
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/arts
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   1. http://www.bbc.co.uk/accessibility/
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   2. http://www.bbc.co.uk/news/business-17442946
+2017-03-08 23:20:53,760 INFO  fetcher.FetcherJob -   3. http://www.bbc.co.uk/news/uk-39212665
+2017-03-08 23:20:55,722 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/arts (queue crawl delay=5000ms)
+2017-03-08 23:20:58,760 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 25 pages, 0 errors, 0.2 0 pages/s, 82 102 kb/s, 3 URLs in 1 queues
+2017-03-08 23:20:58,760 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:20:58,760 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   nextFetchTime = 1489015261052
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   now           = 1489015258761
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/accessibility/
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   1. http://www.bbc.co.uk/news/business-17442946
+2017-03-08 23:20:58,761 INFO  fetcher.FetcherJob -   2. http://www.bbc.co.uk/news/uk-39212665
+2017-03-08 23:21:01,056 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/accessibility/ (queue crawl delay=5000ms)
+2017-03-08 23:21:03,761 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 26 pages, 0 errors, 0.2 0 pages/s, 81 56 kb/s, 2 URLs in 1 queues
+2017-03-08 23:21:03,761 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:21:03,761 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:21:03,761 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:21:03,761 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:21:03,762 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:21:03,762 INFO  fetcher.FetcherJob -   nextFetchTime = 1489015266143
+2017-03-08 23:21:03,762 INFO  fetcher.FetcherJob -   now           = 1489015263762
+2017-03-08 23:21:03,762 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/news/business-17442946
+2017-03-08 23:21:03,762 INFO  fetcher.FetcherJob -   1. http://www.bbc.co.uk/news/uk-39212665
+2017-03-08 23:21:06,146 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/business-17442946 (queue crawl delay=5000ms)
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob - 10/10 spinwaiting/active, 27 pages, 0 errors, 0.2 0 pages/s, 82 102 kb/s, 1 URLs in 1 queues
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob - * queue: http://www.bbc.co.uk
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   maxThreads    = 1
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   inProgress    = 0
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   crawlDelay    = 5000
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   minCrawlDelay = 0
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   nextFetchTime = 1489015271238
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   now           = 1489015268762
+2017-03-08 23:21:08,762 INFO  fetcher.FetcherJob -   0. http://www.bbc.co.uk/news/uk-39212665
+2017-03-08 23:21:11,241 INFO  fetcher.FetcherJob - fetching http://www.bbc.co.uk/news/uk-39212665 (queue crawl delay=5000ms)
+2017-03-08 23:21:11,277 INFO  fetcher.FetcherJob - -finishing thread FetcherThread9, activeThreads=6
+2017-03-08 23:21:11,277 INFO  fetcher.FetcherJob - -finishing thread FetcherThread8, activeThreads=6
+2017-03-08 23:21:11,277 INFO  fetcher.FetcherJob - -finishing thread FetcherThread1, activeThreads=5
+2017-03-08 23:21:11,277 INFO  fetcher.FetcherJob - -finishing thread FetcherThread5, activeThreads=6
+2017-03-08 23:21:11,277 INFO  fetcher.FetcherJob - -finishing thread FetcherThread2, activeThreads=6
+2017-03-08 23:21:11,280 INFO  fetcher.FetcherJob - -finishing thread FetcherThread7, activeThreads=4
+2017-03-08 23:21:11,280 INFO  fetcher.FetcherJob - -finishing thread FetcherThread4, activeThreads=2
+2017-03-08 23:21:11,280 INFO  fetcher.FetcherJob - -finishing thread FetcherThread3, activeThreads=3
+2017-03-08 23:21:11,313 INFO  fetcher.FetcherJob - -finishing thread FetcherThread0, activeThreads=1
+2017-03-08 23:21:11,333 INFO  fetcher.FetcherJob - -finishing thread FetcherThread6, activeThreads=0
+2017-03-08 23:21:13,763 INFO  fetcher.FetcherJob - 0/0 spinwaiting/active, 28 pages, 0 errors, 0.2 0 pages/s, 83 102 kb/s, 0 URLs in 0 queues
+2017-03-08 23:21:13,763 INFO  fetcher.FetcherJob - -activeThreads=0
+2017-03-08 23:21:13,785 INFO  fetcher.FetcherJob - Using queue mode : byHost
+2017-03-08 23:21:13,785 INFO  fetcher.FetcherJob - Fetcher: threads: 10
+2017-03-08 23:21:13,801 INFO  fetcher.FetcherJob - QueueFeeder finished: total 2 records. Hit by time limit :0
+2017-03-08 23:21:13,811 INFO  fetcher.FetcherJob - fetching http://search.bbc.co.uk/search (queue crawl delay=5000ms)
+2017-03-08 23:21:13,811 INFO  fetcher.FetcherJob - fetching http://www.berndporr.me.uk/ (queue crawl delay=5000ms)
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:21:13,812 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.proxy.host = null
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.proxy.port = 8080
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.timeout = 10000
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.content.limit = 65536
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.agent = Soma Crawler/Nutch-2.3.1
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2017-03-08 23:21:13,813 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2017-03-08 23:21:13,813 INFO  fetcher.FetcherJob - -finishing thread FetcherThread2, activeThreads=3
+2017-03-08 23:21:13,813 INFO  fetcher.FetcherJob - -finishing thread FetcherThread3, activeThreads=2
+2017-03-08 23:21:13,813 INFO  fetcher.FetcherJob - -finishing thread FetcherThread4, activeThreads=2
+2017-03-08 23:21:13,814 INFO  fetcher.FetcherJob - -finishing thread FetcherThread5, activeThreads=2
+2017-03-08 23:21:13,815 INFO  fetcher.FetcherJob - -finishing thread FetcherThread6, activeThreads=2
+2017-03-08 23:21:13,816 INFO  fetcher.FetcherJob - -finishing thread FetcherThread7, activeThreads=2
+2017-03-08 23:21:13,816 INFO  fetcher.FetcherJob - -finishing thread FetcherThread8, activeThreads=2
+2017-03-08 23:21:13,816 INFO  fetcher.FetcherJob - Fetcher: throughput threshold: -1
+2017-03-08 23:21:13,816 INFO  fetcher.FetcherJob - Fetcher: throughput threshold sequence: 5
+2017-03-08 23:21:13,816 INFO  fetcher.FetcherJob - -finishing thread FetcherThread9, activeThreads=2
+2017-03-08 23:21:13,959 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2017-03-08 23:21:13,960 INFO  fetcher.FetcherJob - -finishing thread FetcherThread0, activeThreads=1
+2017-03-08 23:21:14,527 INFO  fetcher.FetcherJob - -finishing thread FetcherThread1, activeThreads=0
+2017-03-08 23:21:18,816 INFO  fetcher.FetcherJob - 0/0 spinwaiting/active, 2 pages, 0 errors, 0.4 0 pages/s, 8 8 kb/s, 0 URLs in 0 queues
+2017-03-08 23:21:18,817 INFO  fetcher.FetcherJob - -activeThreads=0
+2017-03-08 23:21:19,530 INFO  fetcher.FetcherJob - FetcherJob: finished at 2017-03-08 23:21:19, time elapsed: 00:02:31
+2017-03-08 23:30:10,708 INFO  parse.ParserJob - ParserJob: starting at 2017-03-08 23:30:10
+2017-03-08 23:30:10,709 INFO  parse.ParserJob - ParserJob: resuming:	false
+2017-03-08 23:30:10,709 INFO  parse.ParserJob - ParserJob: forced reparse:	false
+2017-03-08 23:30:10,709 INFO  parse.ParserJob - ParserJob: parsing all
+2017-03-08 23:30:10,825 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:30:11,150 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2017-03-08 23:30:11,624 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1369078681/.staging/job_local1369078681_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:30:11,626 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul1369078681/.staging/job_local1369078681_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:30:11,671 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1369078681_0001/job_local1369078681_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:30:11,672 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local1369078681_0001/job_local1369078681_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:30:11,733 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2017-03-08 23:30:11,796 INFO  parse.ParserJob - Parsing http://search.bbc.co.uk/search
+2017-03-08 23:30:11,799 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/accessibility/
+2017-03-08 23:30:11,914 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2017-03-08 23:30:11,938 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/arts
+2017-03-08 23:30:11,969 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/cbbc
+2017-03-08 23:30:11,988 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/cbeebies
+2017-03-08 23:30:12,008 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/education
+2017-03-08 23:30:12,029 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/food
+2017-03-08 23:30:12,030 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/iplayer
+2017-03-08 23:30:12,054 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/iwonder
+2017-03-08 23:30:12,085 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/local
+2017-03-08 23:30:12,086 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/makeitdigital
+2017-03-08 23:30:12,103 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/music
+2017-03-08 23:30:12,119 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news
+2017-03-08 23:30:12,126 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/business-17442946
+2017-03-08 23:30:12,139 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/business-39114211
+2017-03-08 23:30:12,158 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/business-39193938
+2017-03-08 23:30:12,171 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/live/business-39155802
+2017-03-08 23:30:12,175 WARN  parse.ParserJob - http://www.bbc.co.uk/news/live/business-39155802 skipped. Content of size 399855 was truncated to 65536
+2017-03-08 23:30:12,176 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-39212665
+2017-03-08 23:30:12,189 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-england-39193347
+2017-03-08 23:30:12,202 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-england-suffolk-39209562
+2017-03-08 23:30:12,220 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/news/uk-politics-39203784
+2017-03-08 23:30:12,231 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/radio
+2017-03-08 23:30:12,231 WARN  parse.ParserJob - http://www.bbc.co.uk/radio skipped. Content of size 154340 was truncated to 64953
+2017-03-08 23:30:12,232 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport
+2017-03-08 23:30:12,243 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport/football/39136972
+2017-03-08 23:30:12,244 WARN  parse.ParserJob - http://www.bbc.co.uk/sport/football/39136972 skipped. Content of size 224106 was truncated to 65536
+2017-03-08 23:30:12,244 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport/football/39152666
+2017-03-08 23:30:12,244 WARN  parse.ParserJob - http://www.bbc.co.uk/sport/football/39152666 skipped. Content of size 231329 was truncated to 65536
+2017-03-08 23:30:12,246 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/sport/rugby-union/39210782
+2017-03-08 23:30:12,259 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/taster
+2017-03-08 23:30:12,260 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/tv
+2017-03-08 23:30:12,287 INFO  parse.ParserJob - Parsing http://www.bbc.co.uk/weather
+2017-03-08 23:30:12,287 INFO  parse.ParserJob - Parsing http://www.berndporr.me.uk/
+2017-03-08 23:30:12,695 INFO  parse.ParserJob - ParserJob: success
+2017-03-08 23:30:12,695 INFO  parse.ParserJob - ParserJob: finished at 2017-03-08 23:30:12, time elapsed: 00:00:01
+2017-03-08 23:30:23,864 INFO  crawl.DbUpdaterJob - DbUpdaterJob: starting at 2017-03-08 23:30:23
+2017-03-08 23:30:23,864 INFO  crawl.DbUpdaterJob - DbUpdaterJob: updatinging all
+2017-03-08 23:30:24,042 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:30:24,645 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul475044793/.staging/job_local475044793_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:30:24,646 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul475044793/.staging/job_local475044793_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:30:24,695 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local475044793_0001/job_local475044793_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:30:24,697 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local475044793_0001/job_local475044793_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:30:24,954 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2017-03-08 23:30:24,954 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2017-03-08 23:30:24,955 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2017-03-08 23:30:25,716 INFO  crawl.DbUpdaterJob - DbUpdaterJob: finished at 2017-03-08 23:30:25, time elapsed: 00:00:01
+2017-03-08 23:30:37,403 INFO  indexer.IndexingJob - IndexingJob: starting
+2017-03-08 23:30:37,548 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 23:30:37,672 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:30:37,672 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:30:37,673 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:30:37,673 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:30:37,675 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:30:37,824 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:30:38,284 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul235226868/.staging/job_local235226868_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:30:38,286 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/staging/paul235226868/.staging/job_local235226868_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:30:38,330 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local235226868_0001/job_local235226868_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2017-03-08 23:30:38,332 WARN  conf.Configuration - file:/tmp/hadoop-paul/mapred/local/localRunner/paul/job_local235226868_0001/job_local235226868_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2017-03-08 23:30:38,419 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:30:39,729 INFO  basic.BasicIndexingFilter - Maximum title length for indexing set to: 100
+2017-03-08 23:30:39,729 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2017-03-08 23:30:39,729 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2017-03-08 23:30:39,729 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2017-03-08 23:30:39,729 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.metadata.MetadataIndexer
+2017-03-08 23:30:39,730 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.more.MoreIndexingFilter
+2017-03-08 23:30:39,825 INFO  elastic.ElasticIndexWriter - Processing remaining requests [docs = 22, length = 28674, total docs = 22]
+2017-03-08 23:30:39,831 INFO  elastic.ElasticIndexWriter - Processing to finalize last execute
+2017-03-08 23:30:40,336 INFO  elastic.ElasticIndexWriter - Previous took in ms 494, including wait 505
+2017-03-08 23:30:42,422 INFO  indexer.IndexWriters - Adding org.apache.nutch.indexwriter.elastic.ElasticIndexWriter
+2017-03-08 23:30:42,422 INFO  indexer.IndexingJob - Active IndexWriters :
+ElasticIndexWriter
+	elastic.cluster : elastic prefix cluster
+	elastic.host : hostname
+	elastic.port : port  (default 9300)
+	elastic.index : elastic index command 
+	elastic.max.bulk.docs : elastic bulk index doc counts. (default 250) 
+	elastic.max.bulk.size : elastic bulk index length. (default 2500500 ~2.5MB)
+
+
+2017-03-08 23:30:42,492 INFO  indexer.IndexingJob - IndexingJob: done.
