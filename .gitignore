@@ -1,4 +1,4 @@
 *.class
 *.jar
 *.job
-
+elasticsearch-5.2.1/bin

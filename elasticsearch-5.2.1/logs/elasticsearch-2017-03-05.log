@@ -1,0 +1,56 @@
+[2017-03-05T22:43:07,128][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-03-05T22:43:07,370][INFO ][o.e.e.NodeEnvironment    ] [GJKX3VM] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [1.8tb], net total_space [1.9tb], spins? [possibly], types [ext4]
+[2017-03-05T22:43:07,370][INFO ][o.e.e.NodeEnvironment    ] [GJKX3VM] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-03-05T22:43:07,372][INFO ][o.e.n.Node               ] node name [GJKX3VM] derived from node ID [GJKX3VMNQUG4jbi_0dFdVg]; set [node.name] to override
+[2017-03-05T22:43:07,375][INFO ][o.e.n.Node               ] version[5.2.1], pid[10360], build[db0d481/2017-02-09T22:05:32.386Z], OS[Linux/4.4.0-64-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/1.8.0_121/25.121-b13]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [aggs-matrix-stats]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [ingest-common]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-expression]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-groovy]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-mustache]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-painless]
+[2017-03-05T22:43:08,460][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [percolator]
+[2017-03-05T22:43:08,461][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [reindex]
+[2017-03-05T22:43:08,461][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [transport-netty3]
+[2017-03-05T22:43:08,461][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [transport-netty4]
+[2017-03-05T22:43:08,461][INFO ][o.e.p.PluginsService     ] [GJKX3VM] no plugins loaded
+[2017-03-05T22:43:10,514][INFO ][o.e.n.Node               ] initialized
+[2017-03-05T22:43:10,514][INFO ][o.e.n.Node               ] [GJKX3VM] starting ...
+[2017-03-05T22:43:10,668][INFO ][o.e.t.TransportService   ] [GJKX3VM] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-03-05T22:43:10,673][WARN ][o.e.b.BootstrapChecks    ] [GJKX3VM] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-03-05T22:43:13,734][INFO ][o.e.c.s.ClusterService   ] [GJKX3VM] new_master {GJKX3VM}{GJKX3VMNQUG4jbi_0dFdVg}{cbmXGVyoTDGnDvEZOaMMZg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-03-05T22:43:13,769][INFO ][o.e.h.HttpServer         ] [GJKX3VM] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-03-05T22:43:13,770][INFO ][o.e.n.Node               ] [GJKX3VM] started
+[2017-03-05T22:43:13,872][INFO ][o.e.g.GatewayService     ] [GJKX3VM] recovered [0] indices into cluster_state
+[2017-03-05T22:53:16,377][INFO ][o.e.n.Node               ] [GJKX3VM] stopping ...
+[2017-03-05T22:53:16,396][INFO ][o.e.n.Node               ] [GJKX3VM] stopped
+[2017-03-05T22:53:16,397][INFO ][o.e.n.Node               ] [GJKX3VM] closing ...
+[2017-03-05T22:53:16,403][INFO ][o.e.n.Node               ] [GJKX3VM] closed
+[2017-03-05T22:53:31,857][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-03-05T22:53:31,951][INFO ][o.e.e.NodeEnvironment    ] [GJKX3VM] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [1.8tb], net total_space [1.9tb], spins? [possibly], types [ext4]
+[2017-03-05T22:53:31,951][INFO ][o.e.e.NodeEnvironment    ] [GJKX3VM] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-03-05T22:53:31,952][INFO ][o.e.n.Node               ] node name [GJKX3VM] derived from node ID [GJKX3VMNQUG4jbi_0dFdVg]; set [node.name] to override
+[2017-03-05T22:53:31,953][INFO ][o.e.n.Node               ] version[5.2.1], pid[10578], build[db0d481/2017-02-09T22:05:32.386Z], OS[Linux/4.4.0-64-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/1.8.0_121/25.121-b13]
+[2017-03-05T22:53:32,450][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [aggs-matrix-stats]
+[2017-03-05T22:53:32,450][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [ingest-common]
+[2017-03-05T22:53:32,450][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-expression]
+[2017-03-05T22:53:32,450][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-groovy]
+[2017-03-05T22:53:32,450][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-mustache]
+[2017-03-05T22:53:32,450][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [lang-painless]
+[2017-03-05T22:53:32,451][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [percolator]
+[2017-03-05T22:53:32,451][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [reindex]
+[2017-03-05T22:53:32,451][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [transport-netty3]
+[2017-03-05T22:53:32,451][INFO ][o.e.p.PluginsService     ] [GJKX3VM] loaded module [transport-netty4]
+[2017-03-05T22:53:32,451][INFO ][o.e.p.PluginsService     ] [GJKX3VM] no plugins loaded
+[2017-03-05T22:53:33,593][INFO ][o.e.n.Node               ] initialized
+[2017-03-05T22:53:33,593][INFO ][o.e.n.Node               ] [GJKX3VM] starting ...
+[2017-03-05T22:53:33,681][INFO ][o.e.t.TransportService   ] [GJKX3VM] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-03-05T22:53:33,687][WARN ][o.e.b.BootstrapChecks    ] [GJKX3VM] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-03-05T22:53:36,728][INFO ][o.e.c.s.ClusterService   ] [GJKX3VM] new_master {GJKX3VM}{GJKX3VMNQUG4jbi_0dFdVg}{3hTFwP3PS1WfQLOjDxfpKA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-03-05T22:53:36,754][INFO ][o.e.h.HttpServer         ] [GJKX3VM] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-03-05T22:53:36,754][INFO ][o.e.n.Node               ] [GJKX3VM] started
+[2017-03-05T22:53:36,802][INFO ][o.e.g.GatewayService     ] [GJKX3VM] recovered [0] indices into cluster_state
+[2017-03-05T23:30:23,487][INFO ][o.e.n.Node               ] [GJKX3VM] stopping ...
+[2017-03-05T23:30:23,602][INFO ][o.e.n.Node               ] [GJKX3VM] stopped
+[2017-03-05T23:30:23,602][INFO ][o.e.n.Node               ] [GJKX3VM] closing ...
+[2017-03-05T23:30:23,618][INFO ][o.e.n.Node               ] [GJKX3VM] closed

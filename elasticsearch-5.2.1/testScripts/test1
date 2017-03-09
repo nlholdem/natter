@@ -1,0 +1,133 @@
+
+
+simple search: 
+
+
+
+GET /testing/_search?_source_exclude=data
+
+Delete all of a type: 
+
+POST testing/rtf/_delete_by_query?conflicts=proceed
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+Console command:
+----------------
+
+PUT _ingest/pipeline/attachment
+{
+  "description" : "Extract attachment information from arrays",
+  "processors" : [
+    {
+      "foreach": {
+        "field": "attachments",
+        "processor": {
+          "attachment": {
+            "target_field": "_ingest._value.attachment",
+            "field": "_ingest._value.data"
+          }
+        }
+      }
+    }
+  ]
+}
+PUT my_index/my_type/my_id?pipeline=attachment
+{
+  "attachments" : [
+    {
+      "filename" : "ipsum.txt",
+      "data" : "dGhpcyBpcwpqdXN0IHNvbWUgdGV4dAo="
+    },
+    {
+      "filename" : "test.txt",
+      "data" : "VGhpcyBpcyBhIHRlc3QK"
+    }
+  ]
+}
+GET my_index/my_type/my_id
+
+Same thing via Curl:
+--------------------
+
+curl -XPUT 'localhost:9200/_ingest/pipeline/attachment?pretty' -H 'Content-Type: application/json' -d'
+{
+  "description" : "Extract attachment information from arrays",
+  "processors" : [
+    {
+      "foreach": {
+        "field": "attachments",
+        "processor": {
+          "attachment": {
+            "target_field": "_ingest._value.attachment",
+            "field": "_ingest._value.data"
+          }
+        }
+      }
+    }
+  ]
+}
+'
+curl -XPUT 'localhost:9200/testing/rtf/1?pipeline=attachment&pretty' -H 'Content-Type: application/json' -d'
+{
+  "attachments" : [
+    {
+      "filename" : "ipsum.txt",
+      "data" : "dGhpcyBpcwpqdXN0IHNvbWUgdGV4dAo="
+    },
+    {
+      "filename" : "test.txt",
+      "data" : "VGhpcyBpcyBhIHRlc3QK"
+    }
+  ]
+}
+'
+curl -XGET 'localhost:9200/testing/rtf/1?pretty'
+
+
+---------------------------
+
+
+
+
+PUT test/attachment/_mapping 
+{
+  "attachment" : {
+    "properties" : {
+      "file" : {
+        "type" : "attachment",
+        "fields" : {
+          "title" : { "store" : "yes" },
+          "file" : { "term_vector":"with_positions_offsets", "store":"yes" }
+        }
+      }
+    }
+  }
+}
+
+OR: 
+
+curl -X PUT "localhost:9200/test/attachment/_mapping" -d '{
+  "attachment" : {
+    "properties" : {
+      "file" : {
+        "type" : "attachment",
+        "fields" : {
+          "title" : { "store" : "yes" },
+          "file" : { "term_vector":"with_positions_offsets", "store":"yes" }
+        }
+      }
+    }
+  }
+}'
+
+
+
+
+
+
+
