@@ -52,6 +52,32 @@ $(function () {
 
 //Handle GET request
 
+        fetch('http://localhost:8081/admin')
+                .then(
+                        function (response) {
+                            if (response.status !== 200) {
+                                console.log('Looks like there was a problem. Status Code: ' +
+                                        response.status);
+                                return;
+                            }
+
+                            // Examine the text in the response  
+                            response.json().then(function (data) {
+//                                console.log(data);
+                                console.log("The GET request succeeded, so it did!");
+//				chrome.extension.getBackgroundPage().console.log("hi");
+                                document.getElementById("get").innerHTML = "responseGet: " + data.configuration;
+
+                            });
+                        }
+                )
+                .catch(function (err) {
+                    console.log('Fetch Error :-S', err);
+                });
+
+//		alert("success");
+
+        var url = 'http://localhost:8081/seed/create';
 
         //Handle POST request
 
@@ -64,16 +90,35 @@ $(function () {
             body: '{"name": "nutch","seedUrls":[{"seedList": null,"url": "http://nutch1.apache.org/"}]}'
         })
                 .then(function (response) {
-                            return response.text();
+/*                    response = JSON.stringify(response);
+                    response = response.replace(/\\n/g, "\\n")
+                            .replace(/\\'/g, "\\'")
+                            .replace(/\\"/g, '\\"')
+                            .replace(/\\&/g, "\\&")
+                            .replace(/\\r/g, "\\r")
+                            .replace(/\\t/g, "\\t")
+                            .replace(/\\b/g, "\\b")
+                            .replace(/\\f/g, "\\f");
+// remove non-printable and other non-valid JSON chars
+                    response = response.replace(/[\u0000-\u0019]+/g, "");
+                    var o = JSON.parse(response);
+*/
+                    return response;
                 })
-                .then(function (text) {
-                    console.log(text);
-                    document.getElementById("post").innerHTML = "responsePost: " + text;
-
+                .then(function (result) {
+                    console.log(result);
+            if(result.ok){
+                    console.log('Response type: ', result.text());
+                    console.log('Response type: ', result.PromiseValue);
+                
+            }
+            
                 })
                 .catch(function (error) {
                     console.log('FAIL: ', error);
+
                 });
+
 
     });
 
